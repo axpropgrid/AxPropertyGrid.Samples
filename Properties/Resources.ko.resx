@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="LocaledPropGroupName" xml:space="preserve">
+    <value>지역화 예제</value>
+  </data>
+  <data name="LocaledBoolPropName" xml:space="preserve">
+    <value>부울 속성</value>
+  </data>
+  <data name="LocaledBoolPropHelp" xml:space="preserve">
+    <value>부울 속성에 대한 도움말 텍스트입니다.</value>
+  </data>
+  <data name="LocaledStringPropName" xml:space="preserve">
+    <value>문자열 속성</value>
+  </data>
+  <data name="LocaledStringPropHelp" xml:space="preserve">
+    <value>문자열 속성에 대한 도움말 텍스트입니다.</value>
+  </data>
+  <data name="LocaledDoublePropName" xml:space="preserve">
+    <value>배정밀도 속성</value>
+  </data>
+  <data name="LocaledDoublePropHelp" xml:space="preserve">
+    <value>배정밀도 속성에 대한 도움말 텍스트입니다.</value>
+  </data>
+  <data name="LocaledEnumPropName" xml:space="preserve">
+    <value>열거형 속성</value>
+  </data>
+  <data name="LocaledEnumPropHelp" xml:space="preserve">
+    <value>열거형 속성에 대한 도움말 텍스트입니다.</value>
+  </data>
+  <data name="LocaledColorPropName" xml:space="preserve">
+    <value>색상 속성</value>
+  </data>
+  <data name="LocaledColorPropHelp" xml:space="preserve">
+    <value>색상 속성에 대한 도움말 텍스트입니다.</value>
+  </data>
+  <data name="LocaledDatePropName" xml:space="preserve">
+    <value>날짜 속성</value>
+  </data>
+  <data name="LocaledDatePropHelp" xml:space="preserve">
+    <value>날짜 속성에 대한 도움말 텍스트입니다.</value>
+  </data>
+  <data name="LocaledEnumValueText" xml:space="preserve">
+    <value>지역화된 열거형 값</value>
+  </data>
+</root>

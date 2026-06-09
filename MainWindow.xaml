@@ -1,0 +1,74 @@
+<Window x:Class="AxPropertyGrid.Samples.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AxPropertyGrid.Samples"
+        xmlns:bax="http://bax.bqf.com/winfx/xaml/controls"
+        mc:Ignorable="d"
+        Title="AxPropertyGrid.Samples" Height="600" Width="400">
+
+    <Grid Margin="8">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Row 0: Test Object + Language -->
+        <StackPanel Grid.Row="0" Margin="0,0,0,6">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="0" Margin="0,0,8,0">
+                    <TextBlock Text="Select Test Object:" FontWeight="SemiBold" Margin="0,0,0,4"/>
+                    <ComboBox x:Name="cmbTestObject" SelectedIndex="0" SelectionChanged="CmbTestObject_SelectionChanged">
+                        <ComboBoxItem Content="SampleObject (Attributes)"/>
+                        <ComboBoxItem Content="ServerConnectionSettings (GridSetting API)"/>
+                        <ComboBoxItem Content="ApplicationSettings (Explicit Properties)"/>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Grid.Column="1">
+                    <TextBlock Text="Language:" FontWeight="SemiBold" Margin="0,0,0,4"/>
+                    <ComboBox x:Name="cmbLanguage" SelectedIndex="0" Width="120" SelectionChanged="CmbLanguage_SelectionChanged">
+                        <ComboBoxItem Tag="" Content="System Default"/>
+                        <ComboBoxItem Tag="en" Content="English"/>
+                        <ComboBoxItem Tag="zh" Content="中文"/>
+                        <ComboBoxItem Tag="ko" Content="한국어"/>
+                        <ComboBoxItem Tag="ru" Content="Русский"/>
+                        <ComboBoxItem Tag="de" Content="Deutsch"/>
+                        <ComboBoxItem Tag="es" Content="Español"/>
+                    </ComboBox>
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+
+        <!-- Row 1: Theme Color -->
+        <StackPanel Grid.Row="1" Margin="0,0,0,6">
+            <TextBlock Text="Theme Color:" FontWeight="SemiBold" Margin="0,0,0,4"/>
+            <WrapPanel x:Name="colorPalette">
+                <Border Width="24" Height="24" Margin="0,0,4,0" CornerRadius="3" Cursor="Hand" ToolTip="Default (White)" MouseLeftButtonUp="ColorSwatch_Click" Tag="#FFFFFF" Background="#FFFFFF" BorderBrush="#CCCCCC" BorderThickness="1"/>
+                <Border Width="24" Height="24" Margin="0,0,4,0" CornerRadius="3" Cursor="Hand" ToolTip="Sky Blue" MouseLeftButtonUp="ColorSwatch_Click" Tag="#87CEEB" Background="#87CEEB"/>
+                <Border Width="24" Height="24" Margin="0,0,4,0" CornerRadius="3" Cursor="Hand" ToolTip="Cornflower Blue" MouseLeftButtonUp="ColorSwatch_Click" Tag="#6495ED" Background="#6495ED"/>
+                <Border Width="24" Height="24" Margin="0,0,4,0" CornerRadius="3" Cursor="Hand" ToolTip="Royal Blue" MouseLeftButtonUp="ColorSwatch_Click" Tag="#4169E1" Background="#4169E1"/>
+                <Border Width="24" Height="24" Margin="0,0,4,0" CornerRadius="3" Cursor="Hand" ToolTip="Medium Purple" MouseLeftButtonUp="ColorSwatch_Click" Tag="#9370DB" Background="#9370DB"/>
+                <Border Width="24" Height="24" Margin="0,0,4,0" CornerRadius="3" Cursor="Hand" ToolTip="Orchid" MouseLeftButtonUp="ColorSwatch_Click" Tag="#DA70D6" Background="#DA70D6"/>
+                <Border Width="24" Height="24" Margin="0,0,4,0" CornerRadius="3" Cursor="Hand" ToolTip="Indian Red" MouseLeftButtonUp="ColorSwatch_Click" Tag="#CD5C5C" Background="#CD5C5C"/>
+                <Border Width="24" Height="24" Margin="0,0,4,0" CornerRadius="3" Cursor="Hand" ToolTip="Tomato" MouseLeftButtonUp="ColorSwatch_Click" Tag="#FF6347" Background="#FF6347"/>
+                <Border Width="24" Height="24" Margin="0,0,4,0" CornerRadius="3" Cursor="Hand" ToolTip="Orange" MouseLeftButtonUp="ColorSwatch_Click" Tag="#FFA500" Background="#FFA500"/>
+                <Border Width="24" Height="24" Margin="0,0,4,0" CornerRadius="3" Cursor="Hand" ToolTip="Gold" MouseLeftButtonUp="ColorSwatch_Click" Tag="#FFD700" Background="#FFD700"/>
+                <Border Width="24" Height="24" Margin="0,0,4,0" CornerRadius="3" Cursor="Hand" ToolTip="Lime Green" MouseLeftButtonUp="ColorSwatch_Click" Tag="#32CD32" Background="#32CD32"/>
+                <Border Width="24" Height="24" Margin="0,0,4,0" CornerRadius="3" Cursor="Hand" ToolTip="Medium Sea Green" MouseLeftButtonUp="ColorSwatch_Click" Tag="#3CB371" Background="#3CB371"/>
+                <Border Width="24" Height="24" Margin="0,0,4,0" CornerRadius="3" Cursor="Hand" ToolTip="Teal" MouseLeftButtonUp="ColorSwatch_Click" Tag="#008080" Background="#008080"/>
+                <Border Width="24" Height="24" Margin="0,0,4,0" CornerRadius="3" Cursor="Hand" ToolTip="Slate Gray" MouseLeftButtonUp="ColorSwatch_Click" Tag="#708090" Background="#708090"/>
+            </WrapPanel>
+        </StackPanel>
+
+        <bax:AxPropertyGrid x:Name="pg" Grid.Row="2" Margin="0,0"/>
+    </Grid>
+
+</Window>
