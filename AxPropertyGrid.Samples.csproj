@@ -19,8 +19,4 @@
     </Content>
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\AxPropertyGrid.WPF\AxPropertyGrid.WPF.csproj" />
-  </ItemGroup>
-
 </Project>

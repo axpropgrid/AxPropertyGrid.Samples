@@ -232,6 +232,6 @@ AxPropertyGrid.Samples/
 
 ## More Information
 
-- **Product page**: [axpropertygrid.com](https://axpropertygrid.com)
-- **Documentation**: [axpropertygrid.com/docs](https://axpropertygrid.com/docs)
+- **Product page**: [axpropertygrid.com](https://propertygrid.top)
+- **Documentation**: [axpropertygrid.com/docs](https://propertygrid.top/docs)
 - **NuGet**: `Install-Package AxPropertyGrid.WPF`
