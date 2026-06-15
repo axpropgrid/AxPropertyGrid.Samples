@@ -10,13 +10,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="AxPropertyGrid.WPF.lic" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Content Include="AxPropertyGrid.WPF.lic">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AxPropertyGrid.WPF" Version="1.0.0" />
   </ItemGroup>
 
 </Project>
